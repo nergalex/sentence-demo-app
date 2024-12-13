@@ -175,7 +175,7 @@ def get_word(attribute, index=None, query=None):
         url = baseURL + '/' + attribute + '/' + str(index)
     elif (query is not None):
         logging.debug("query: %s", query)
-        url = baseURL + '/' + attribute + '?q=' + query
+        url = baseURL + '/' + attribute + '?name=' + query
 
     headers = {
         'content-type': 'application/json',

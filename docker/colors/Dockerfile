@@ -19,4 +19,4 @@ COPY colors.json /
 EXPOSE 8080
 
 #ENTRYPOINT ["json-server"]
-CMD ["json-server", "-H", "0.0.0.0", "--port", "8080" , "--watch", "colors.json"]
+CMD ["json-server", "-h", "0.0.0.0", "--port", "8080" , "--watch", "colors.json"]
